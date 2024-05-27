@@ -1,11 +1,5 @@
 // wm.c - Simple Xorg window manager
 
-// TODO
-//  - Find a method to center upon new window spawning
-//  - Snap windows with hjkl
-//  - Functionize pointer_event()
-
-
 /*
 ButtonPress       A button has been pressed
 ButtonRelease     A button has been released
@@ -93,7 +87,6 @@ Mod5Mask    |   128 | ???
 #define SNAP
 #ifdef SNAP 
 	#define SNAP_PIXELS 20 
-	//#define SNAP_RATIO ( ( double ) 1 / ( double ) 3 )
 
 	#define GAPS
 	#ifdef GAPS
